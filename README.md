@@ -40,7 +40,7 @@ Manual QA portfolio with reproducible examples of web, API and negative testing.
 
 I am building a career in software quality after technical work in sea operations and fiberglass production. That background trained me to follow procedures, notice deviations, document issues clearly and stay reliable in safety-sensitive environments. I am interested in manual testing, API and SQL, mobile/web products, technical support and gradual growth into test automation.
 
-Preferred contact: email — **LebedinskiiAA@gmail.com**  
+Preferred contact: email — **aleksandr.lebedinskii@outlook.com**  
 Languages: Russian — native; English — A1 and actively improving.  
 Target roles: Junior / Junior+ Manual QA, Product Support with QA responsibilities, Web/API QA.
 
