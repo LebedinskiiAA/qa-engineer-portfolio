@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "JSONPlaceholder - Alexander Lebedinskii QA Portfolio",
+    "name": "JSONPlaceholder - Aleksandr Lebedinskii QA Portfolio",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [{"key":"baseUrl","value":"https://jsonplaceholder.typicode.com"}],
