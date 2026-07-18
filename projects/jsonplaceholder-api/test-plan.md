@@ -1,7 +1,7 @@
 # Test Plan — JSONPlaceholder REST API
 
-**Plan ID:** JP-TP-001  
-**Author:** Alexander Lebedinskii  
+**Plan ID:** JP-TP-001  
+**Author:** Aleksandr Lebedinskii  
 **Date:** 18 July 2026
 
 ## Objective
