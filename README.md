@@ -8,10 +8,13 @@ Manual QA portfolio with reproducible examples of web, API and negative testing.
 |---|---|
 | Web testing | Functional, exploratory, smoke, regression, forms, authentication, cart and session flows |
 | API testing | REST, status codes, response validation, negative scenarios and Postman |
-| Documentation | Test plans, test cases, checklists, defect reports and execution summaries |
+| Test design | Positive/negative scenarios, boundary values, equivalence classes, exploratory checks and regression selection |
+| Documentation | Test plans, test cases, checklists, defect reports, test runs, traceability and execution summaries |
+| Tracking & test management | Jira, YouTrack, TestRail, Qase, Test IT and Mantis; Confluence and Markdown for knowledge sharing |
 | Data | SQL fundamentals, PostgreSQL, SQLite and DBeaver |
-| Tools | Chrome DevTools, Postman, Git/GitHub, Test IT, Mantis and Charles Proxy fundamentals |
-| Development | Playwright, test automation fundamentals and deeper API/SQL practice |
+| Tools | Chrome DevTools, Postman, Swagger/OpenAPI, Charles Proxy, Git/GitHub, Terminal and macOS |
+| Mobile | Xcode and iOS Simulator for virtual iPhone/iPad checks; Swift fundamentals |
+| Development | Playwright and test automation fundamentals; deeper API and SQL practice |
 
 ## Projects
 
@@ -25,6 +28,7 @@ Manual QA portfolio with reproducible examples of web, API and negative testing.
 
 - Test cases use stable IDs, preconditions, steps, expected results, priority and status.
 - Defects use severity and priority independently.
+- Bug reports include environment, reproducible steps, expected/actual results, attachments and regression notes.
 - Test plans follow a lightweight IEEE 829 / ISO/IEC/IEEE 29119-inspired structure.
 - Evidence is limited to public demo environments and contains no private user data.
 
