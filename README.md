@@ -1,4 +1,4 @@
-# Alexander Lebedinskii — QA Engineering Portfolio
+# Aleksandr Lebedinskii — QA Engineering Portfolio
 
 Junior / Junior+ QA portfolio demonstrating concise, reproducible test documentation in English.
 
