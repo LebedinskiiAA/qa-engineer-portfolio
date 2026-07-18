@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "JSONPlaceholder - Alexander Lebedinskii QA Portfolio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key":"baseUrl","value":"https://jsonplaceholder.typicode.com"}],
+  "item": [
+    {
+      "name": "Get existing post",
+      "request": {"method":"GET","url":"{{baseUrl}}/posts/1"},
+      "event": [{"listen":"test","script":{"exec":["pm.test('Status is 200', () => pm.response.to.have.status(200));","const body = pm.response.json();","pm.test('Post contract', () => { pm.expect(body.id).to.eql(1); pm.expect(body).to.have.keys('userId','id','title','body'); });"]}}]
+    },
+    {
+      "name": "Get missing post",
+      "request": {"method":"GET","url":"{{baseUrl}}/posts/999999"},
+      "event": [{"listen":"test","script":{"exec":["pm.test('Status is 404', () => pm.response.to.have.status(404));","pm.test('Body is empty object', () => pm.expect(pm.response.json()).to.eql({}));"]}}]
+    },
+    {
+      "name": "Filter comments by post",
+      "request": {"method":"GET","url":"{{baseUrl}}/comments?postId=1"},
+      "event": [{"listen":"test","script":{"exec":["pm.test('Every comment belongs to post 1', () => pm.response.json().forEach(x => pm.expect(x.postId).to.eql(1))); "]}}]
+    }
+  ]
+}
+

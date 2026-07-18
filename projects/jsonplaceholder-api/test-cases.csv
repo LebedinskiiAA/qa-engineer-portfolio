@@ -1,0 +1,12 @@
+Test Case ID,Endpoint,Method,Test Data,Expected Result,Priority,Status
+JP-TC-001,/posts/1,GET,id=1,"200; JSON; id=1; userId title and body present",P0,Passed
+JP-TC-002,/posts,GET,none,"200; JSON array contains 100 posts",P1,Not Run
+JP-TC-003,/posts/999999,GET,missing id,"404; empty JSON object; no unrelated record returned",P0,Passed
+JP-TC-004,/comments?postId=1,GET,postId=1,"200; every returned comment has postId=1",P1,Not Run
+JP-TC-005,/posts/1/comments,GET,post id=1,"200; relationship returns comments only for post 1",P1,Not Run
+JP-TC-006,/users/1,GET,user id=1,"200; email address phone and company object follow contract",P1,Not Run
+JP-TC-007,/todos?userId=1,GET,userId=1,"200; every todo belongs to user 1 and completed is boolean",P1,Not Run
+JP-TC-008,/posts,POST,valid title/body/userId,"201; response echoes input and returns simulated id",P0,Not Run
+JP-TC-009,/posts/1,PATCH,updated title,"200; response retains id and returns updated title",P1,Not Run
+JP-TC-010,/posts/1,DELETE,id=1,"200; response is empty object; operation is documented as simulated",P1,Not Run
+
