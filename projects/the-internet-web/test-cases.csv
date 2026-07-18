@@ -1,0 +1,12 @@
+Test Case ID,Area,Title,Steps,Expected Result,Priority,Status
+TI-TC-001,Authentication,Valid login,"Enter tomsmith and published valid password; select Login",Secure Area opens and success notification is visible,P0,Passed
+TI-TC-002,Authentication,Invalid username,"Enter wrong username and password; select Login",Login is rejected with username-specific message,P0,Passed
+TI-TC-003,Authentication,Invalid password,"Enter valid username and wrong password; select Login",Login is rejected with password-specific message,P0,Not Run
+TI-TC-004,Authentication,Logout,"Log in; select Logout",Login page opens and success logout message is visible,P0,Not Run
+TI-TC-005,Session,Back navigation after logout,"Log out; use browser Back",Secure content is not accessible without authentication,P0,Not Run
+TI-TC-006,Checkboxes,Toggle both checkboxes,Change each checkbox state twice,Each checkbox reflects the requested state independently,P1,Not Run
+TI-TC-007,Dropdown,Select option 2,Open dropdown and choose Option 2,Option 2 becomes the single selected value,P1,Not Run
+TI-TC-008,Dynamic controls,Remove checkbox,Select Remove and wait,Checkbox disappears and confirmation is displayed,P1,Not Run
+TI-TC-009,Validation,Submit blank login form,Leave both fields empty and submit,Actionable validation or authentication error is displayed,P1,Not Run
+TI-TC-010,Accessibility,Keyboard-only login,Navigate and submit using keyboard only,Focus order is logical and visible; form can be completed,P2,Not Run
+
