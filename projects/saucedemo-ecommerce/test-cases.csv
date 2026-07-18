@@ -1,0 +1,14 @@
+Test Case ID,Title,Preconditions,Steps,Expected Result,Priority,Type,Status
+SD-TC-001,Login with valid standard user,Login page is open,"Enter standard_user; enter secret_sauce; select Login",Inventory page opens and Products heading is visible,P0,Positive,Passed
+SD-TC-002,Reject invalid credentials,Login page is open,"Enter invalid username and password; select Login",Authentication is rejected and an actionable error is displayed,P0,Negative,Not Run
+SD-TC-003,Reject locked user,Login page is open,"Enter locked_out_user and valid password; select Login",User remains logged out and locked-state message is displayed,P1,Negative,Not Run
+SD-TC-004,Display complete inventory,Authenticated as standard_user,Open inventory page,Six distinct products show name description price and image,P1,Functional,Passed
+SD-TC-005,Sort products by lowest price,Authenticated on inventory page,Select Price low to high,Products are ordered by ascending numeric price,P1,Functional,Not Run
+SD-TC-006,Add one item to cart,Authenticated on inventory page,Add Sauce Labs Backpack,Button changes to Remove and cart badge becomes 1,P0,State transition,Passed
+SD-TC-007,Remove item from inventory page,One item is in cart,Select Remove for the same item,Item is removed and badge count updates,P0,State transition,Not Run
+SD-TC-008,Persist cart across navigation,One item is in cart,"Open product detail; return to inventory; open cart",The same item and quantity remain in cart,P0,Integration,Not Run
+SD-TC-009,Validate empty checkout information,Cart contains an item and checkout form is open,Leave fields empty and continue,Order is not submitted and required-field error is displayed,P0,Negative,Not Run
+SD-TC-010,Complete checkout happy path,Cart contains an item,"Enter valid customer data; continue; finish",Confirmation page is shown and cart is cleared,P0,End-to-end,Not Run
+SD-TC-011,Logout ends authenticated session,Authenticated user is on inventory page,"Open menu; select Logout; navigate back",Login page remains protected from authenticated content,P0,Security/Session,Passed
+SD-TC-012,Problem user product images,Authenticated as problem_user,Inspect all inventory product images,Each product shows its matching image,P2,Exploratory,Failed
+
