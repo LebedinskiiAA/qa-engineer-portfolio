@@ -1,7 +1,7 @@
 # Test Plan — The Internet Web Forms
 
-**Plan ID:** TI-TP-001  
-**Author:** Alexander Lebedinskii  
+**Plan ID:** TI-TP-001  
+**Author:** Aleksandr Lebedinskii  
 **Date:** 18 July 2026
 
 ## Objective
